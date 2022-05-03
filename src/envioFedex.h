@@ -15,14 +15,15 @@ class EnvioFedex {
     const int costoBase = 35; 
     int cantKilometros;
     int pesoEnvio;
+    float costoEnvio;
 
     public:
 
-    
+    EnvioFedex(int km, int peso);
     
     virtual ~EnvioFedex();
 
-    float CalculoEnvioFedex(int km, int peso);
+    float CalculoEnvio(int km, int peso);
 
     float ObtenerCantKilometros();
 
