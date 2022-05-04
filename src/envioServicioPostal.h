@@ -14,16 +14,21 @@ class EnvioServicioPostal {
     enum tipoClase {primeraClase, segundaClase, terceraClase};
     float cantKilometros;
     int pesoPaquete;
+    int tipoClase;
 
     public:
-    
+
+    EnvioServicioPostal(int clase, int peso, float kilometros);
+
     ~EnvioServicioPostal();
 
-    float CalculoEnvioServicioPostal(int clase, int peso, float kilometros);
+    float CalculoEnvio();
 
     float ObtenerCantKilometros();
 
     int ObtenerPesoPaquete();
+    
+    int ObtenerTipoClaseEnvio();
     
 };
 
