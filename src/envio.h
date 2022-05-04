@@ -1,21 +1,25 @@
-#ifndef TIPOENVIO_H
-#define TIPOENVIO_H
+#ifndef ENVIO_H
+#define ENVIO_H
 
 #include <string>
 
 using namespace std;
 
-class TipoEnvio {
+class Envio {
 
     // Privado
 
     protected:
-    string tipoEnvio;
+    
 
     public:
+
+
+    virtual ~Envio();
+
     virtual float CalculoEnvio() = 0;
 
-    virtual string ObtenerTipoEnvio();
+    
 
     
 };
