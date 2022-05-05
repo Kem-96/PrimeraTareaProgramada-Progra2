@@ -1,9 +1,9 @@
 #include "envio.h"
 
 
-Envio::~Envio(){
+//Envio::~Envio(){
     
-}
+//}
 
 
 //int Envio::ObtenerTipoEnvio(){

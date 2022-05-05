@@ -15,7 +15,7 @@ class Envio {
     public:
 
 
-    virtual ~Envio();
+    //virtual ~Envio();
 
     virtual float CalculoEnvio() = 0;
 
