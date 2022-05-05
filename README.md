@@ -18,4 +18,4 @@ make test
 
 y para ejecutarlas utilice el siguiente:
 
-./bin/test 
+./bin/tests 
