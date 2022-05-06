@@ -29,9 +29,7 @@ test:
 	g++ $(FLAGS) src/envioFedex.cpp -o bin/envioFedex.o
 	g++ $(FLAGS) tests/envioServicioPostal_tests.cpp -o bin/envioServicioPostal_tests.o
 	g++ $(FLAGS) src/envioServicioPostal.cpp -o bin/envioServicioPostal.o
-	g++ $(FLAGS) tests/envio_tests.cpp -o bin/envio_tests.o
-	g++ $(FLAGS) src/envio.cpp -o bin/envio.o
-	g++ -g -o bin/tests bin/envioFedex_tests.o bin/envioFedex.o bin/envioServicioPostal_tests.o bin/envioServicioPostal.o bin/envio_tests.o bin/envio.o -lgtest -lgtest_main -lpthread 
+	g++ -g -o bin/tests bin/envioFedex_tests.o bin/envioFedex.o bin/envioServicioPostal_tests.o bin/envioServicioPostal.o -lgtest -lgtest_main -lpthread 
 	
 
 clean:
