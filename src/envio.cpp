@@ -1,12 +1,11 @@
 #include "envio.h"
 
 
-//Envio::~Envio(){
+Envio::~Envio(){
     
-//}
+}
 
-
-//int Envio::ObtenerTipoEnvio(){
-    //return tipoEnvio;
-//}
+string Envio::ObtenerNombre() {
+    return "Nombre del empleado: " + this->nombre;
+}
 

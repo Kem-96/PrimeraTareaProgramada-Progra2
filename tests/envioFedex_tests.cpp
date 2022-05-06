@@ -119,6 +119,24 @@ namespace
         // Assert - valide los resultados
         EXPECT_FLOAT_EQ(esperada, actual);
     }
+    
+    TEST(EnvioFedex_CalculoEnvio_Test, Test_6_Peso_Mayor10kgYKmMayor500_Retorna_60)
+    {
+        /// AAA
 
+        // Arrange - configurar el escenario
+        float km = 700.00;
+        float peso = 12.00;
+        EnvioFedex* envio1 = new EnvioFedex(km, peso);
+        
+        delete envio1;
+
+        // Act - ejecute la operación
+        float actual = envio1->CalculoEnvio();
+        float esperada = 60.00;
+
+        // Assert - valide los resultados
+        EXPECT_FLOAT_EQ(esperada, actual);
+    }
     
 }

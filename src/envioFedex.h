@@ -1,11 +1,12 @@
 #ifndef ENVIOFEDEX_H
 #define ENVIOFEDEX_H
 
+#include "envio.h"
 #include <string>
 
 using namespace std;
 
-class EnvioFedex {
+class EnvioFedex : public Envio { 
 
     // Privado
     
@@ -15,19 +16,19 @@ class EnvioFedex {
     const int costoBase = 35; 
     float cantKilometros;
     float pesoEnvio;
-    //float costoEnvio;
+    float costoEnvio;
 
     public:
 
     EnvioFedex(float km, float peso);
     
-    virtual ~EnvioFedex();
+    ~EnvioFedex();
 
-    float CalculoEnvioFedex();
+    virtual float CalculoEnvio();
 
     virtual float ObtenerCantKilometros();
 
-    virtual float ObtenerPeso();
+    virtual float ObtenerPesoPaquete();
 };
 
 

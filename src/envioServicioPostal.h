@@ -1,11 +1,12 @@
 #ifndef ENVIOSERVICIOPOSTAL_H
 #define ENVIOSERVICIOPOSTAL_H
 
+#include "envio.h"
 #include <string>
 
 using namespace std;
 
-class EnvioServicioPostal {
+class EnvioServicioPostal : public Envio{
 
     // Privado
 
@@ -13,20 +14,20 @@ class EnvioServicioPostal {
 
     enum tipoClase {primeraClase, segundaClase, terceraClase};
     float cantKilometros;
-    int pesoPaquete;
+    int pesoEnvio;
     int tipoClase;
 
     public:
 
     EnvioServicioPostal(int clase, int peso, float kilometros);
 
-    ~EnvioServicioPostal();
+    //~EnvioServicioPostal();
 
-    float CalculoEnvio();
+    virtual float CalculoEnvio();
 
-    float ObtenerCantKilometros();
+    virtual float ObtenerCantKilometros();
 
-    int ObtenerPesoPaquete();
+    virtual float ObtenerPesoPaquete();
     
     int ObtenerTipoClaseEnvio();
     

@@ -11,17 +11,16 @@ class Envio {
 
     protected:
     
+    string nombre;
 
     public:
+    ~Envio();
+    virtual float CalculoEnvio()=0;
 
+    virtual float ObtenerCantKilometros()=0;
 
-    //virtual ~Envio();
-
-    virtual float CalculoEnvio() = 0;
-
-    
-
-    
+    virtual float ObtenerPesoPaquete()=0;
+    string ObtenerNombre();
 };
 
 
